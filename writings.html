@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Tetsuya Ishikawa is a mathematical engineer, focusing all his efforts on making the world better through mathematics">
+        <meta name="keywords" content="石川徹也,Tetsuya Ishikawa,数学,機械学習,ソフトウェア,Mathematics,Machine Learning,Software">
+        <meta name="robots" content="index,follow" />
+        <meta name="author" content="Tetsuya Ishikawa, tiskw111@gmail.com">
+        <meta name="url" content="https://tiskw.gitlab.io/home/">
+        <link rel="icon" href="images/else/logo-short.svg">
+
+        <title>Tetsuya Ishikawa</title>
+
+        <!-- Load webfont -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" type="text/css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" type="text/css">
+
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Custom styles for this page -->
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="d-flex flex-column h-100">
+
+        <!-- Fixed navbar -->
+        <header><nav class="navbar navbar-expand-md fixed-top"><div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="images/else/logo.svg" alt="webpage_logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse"><ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item"><a class="nav-link active" href="./writings.html">Writings</a></li>
+                <li class="nav-item"><a class="nav-link normal" href="./code.html">Code</a></li>
+                <li class="nav-item"><a class="nav-link normal" href="./running.html">Running</a></li>
+                <li class="nav-item"><a class="nav-link normal" href="./about.html">About</a></li>
+            </ul></div>
+        </div></nav></header>
+
+        <main class="flex-shrink-0">
+
+            <!-- Jumbotrom -->
+            <div class="jumbotron position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center"><div class="col-md-5 p-lg-1 mx-auto my-5">
+                <h1 class="display-1 fw-normal">Tetsuya Ishikawa</h1>
+                <p class="h4 fw-normal">Everything in the World is Made of Mathematics</p>
+            </div></div>
+
+            <div class="site-contents container p-lg-1">
+
+                <div class="row mb-3"><div class="col-md-12 text-center">
+                    <h1 class="display-4">Writings</h1>
+                    <p>拙作の書き物をご紹介するページです</p>
+                </div></div>
+
+                <div class="row mb-1">
+                    <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
+                        <h3 class="card-title text-center">サポートベクターマシンとカーネル回帰</h3>
+                        <img src="images/writings/kernel_svm_example.png" class="card-img-top" alt="kernel_svm_example">
+                        <p class="card-text">関数解析の立場からカーネルサポートベクターマシンについて説明した文書です． <!--
+                        -->まずは線形のサポートベクターマシンについて説明し，それを関数解析を用いてカーネル化する，という順序で解説しています．<!--
+                        -->サポートベクターマシンの入門書としてはもちろんのこと，関数解析に興味を持つための入り口としてもお読み頂けると思います．<!--
+                        -->実は，このアプローチの延長で，2007年に提案された Random Fourier Features がすぐに理解できます．<!--
+                        -->RFF に関しては別文書にまとめてありますので，余裕があればそちらもご覧下さい．</p>
+                        <a href="https://github.com/tiskw/Mathematical-Articles/blob/master/kernel_support_vector_machine_JP/kernel_support_vector_machine.pdf" class="btn btn-primary" target="blank_"><!--
+                        --><i class="fab fa-github"></i> GitHub Repository <i class="fas fa-external-link-alt"></i></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
+                        <h3 class="card-title text-center">Random Fourier Features</h3>
+                        <img src="images/writings/kernel_approximation.png" class="card-img-top" alt="kernel_svm_example">
+                        <p class="card-text">本文書は，2007年に提案された Random Fourier Features (以下，RFF と略します) について解説した文書です．<!--
+                        -->古典的なカーネルサポートベクターマシンを事前に理解しておく必要がありますが，<!--
+                        -->比較的最近の新鮮な結果に踏み込めるというのは若い方々にとっては良いのではないかなと思います．<!--
+                        -->また，RFF は単純な深層学習の変形と見なすこともでき，そのことにも簡単に触れています．<!--
+                        -->RFFをScikit-learnのように使えるようにした拙作のライブラリ <a href="./code.html#rfflearn" class="hover-anime">rfflearn <i class="fas fa-external-link-alt"></i></a> も宜しければどうぞ．</p>
+                        <a href="https://github.com/tiskw/Mathematical-Articles/blob/master/random_fourier_features_JP/random_fourier_features.pdf" class="btn btn-primary" target="blank_"><!--
+                        --><i class="fab fa-github"></i> GitHub Repository <i class="fas fa-external-link-alt"></i></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
+                        <h3 class="card-title text-center">確率論と完全加法族</h3>
+                        <p class="card-text">本文書は，完全加法族の理解を通じて確率論に触れてみようと試みた文書です．<!--
+                        -->確率とは何かを少しでも同僚に理解してもらいたくて工夫した結果，生まれた産物でもあります．<!--
+                        -->また本文書の末尾では，完全加法族の応用についても述べますが，実はこれはパーコレーション理論の入り口でもあります．<!--
+                        -->完全加法族は情報量を表すツールなのか！という実感を持って頂ければ幸いです．<!--
+                        -->現在，文書修正中です．あまり期待せずにのんびりお待ちください．</p>
+                    </div></div></div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer mt-auto py-3">
+            <div class="container text-center">
+                <span>Copyright (C) 2017-<span id="thisYear"></span> Tetsuya Ishikawa</span>
+            </div>
+        </footer>
+
+        <!-- Load javascripts -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
