@@ -71,15 +71,16 @@
                     </div></div></div>
 
                     <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
-                        <h3 class="card-title text-center">yanagi: ファイルパス選択ツール</h3>
-                        <img src="images/code/yanagi-demo.gif" class="card-img-top" alt="yanagi_demo">
-                        <p class="card-text">Linux のコマンドラインが大好きだけれども cd や mv コマンドなどでファイルパスを指定するのが<!--
-                        -->どうにも面倒だ！というそこの貴方へ．ファイラのように視覚的にファイルの選択ができ，選択したファイルやディレクトリのパスを<!--
-                        -->端末エミュレータに挿入できるツールです．これでコマンドラインがますます好きになること間違いなしです．<!--
-                        -->現状，本ツールの前提条件として，Python3 がインストールされていること，シェルが fish shell であることが必要です<!--
-                        -->（原理的には bash や zsh でもできると思うのですが，まだ調査中です）．<!--
+                        <h3 class="card-title text-center">nishiki: shell ラッパー</h3>
+                        <img src="images/code/nishiki_screenshot.jpg" class="card-img-top" alt="nishiki_screenshot">
+                        <p class="card-text">Linux のコマンドラインが大好きだけれども cd や mv コマンドなどでファイルパスを指定するのが面倒！，<!--
+                        -->あるいはオプション引数を覚えきれない！というそこの貴方へ．nishiki はコマンドを入力しながらファイルパスやオプション引数の<!--
+                        -->候補をリアルタイムに画面に表示し，TAB を押すと補完することができます．通常のシェルと比較すると煩わしいくらいの補完です．<!--
+                        -->本ソフトウェアは Nim で記述されており，簡潔さのために 500 行以内で実装されています（ただしコメントや空白行はカウント外）．<!--
+                        -->また，任意の言語で作成した外部プログラムをプラグインとして呼び出すことができます．<!--
+                        -->ただし本ソフトウェアは shell ではなく，編集補助のための shell ラッパーという点にご注意下さい．<!--
                         -->ソースコードは GitHub で公開しています．</p>
-                        <a href="https://github.com/tiskw/yanagi" class="btn btn-primary" target="blank_"><!--
+                        <a href="https://github.com/tiskw/nishiki" class="btn btn-primary" target="blank_"><!--
                         --><i class="fab fa-github"></i> GitHub Repository <i class="fas fa-external-link-alt"></i></a>
                     </div></div></div>
 
