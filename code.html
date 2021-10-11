@@ -71,6 +71,23 @@
                     </div></div></div>
 
                     <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
+                        <h3 class="card-title text-center" id="gpblayer">Gaussian process bootstrapping layer</h3>
+                        <img src="images/code/gpb_layer_sketch.png" class="card-img-top" alt="gpb_layer_sketch">
+                        <p class="card-text">ニューラルネットの汎化性能を向上させることを目的とした，ブートストラッピング層のご提案です．<!--
+                        -->ガウス過程モデルに random Fourier features を適用すると，全結合層と似た数学的構造を持ちます．<!--
+                        -->これを発展させることで，全結合層や畳み込み層に特徴量の予測分散を算出させることができます．<!--
+                        -->この予測分散を用いて特徴量にノイズを加えることで特徴量をブートストラップし，汎化性能を高めるのが<!--
+                        -->このレポジトリでご提案する Gaussian process bootstrapping layer (GPB layer) です．<!--
+                        -->理論的な詳細は<!--
+                        --><a href="https://github.com/tiskw/gaussian-process-bootstrapping-layer/blob/main/documents/gaussian-process-bootstrapping-layer.pdf" class="hover-anime">こちらの文書 <i class="fas fa-external-link-alt"></i></a><!--
+                        --> をご参照下さい．<!--
+                        -->網羅的ではありませんが，とりあえず LeNet-5 と CIFAR10 の組み合わせで効果を確認しています．<!--
+                        -->実験結果および GPB layer の PyTorch 実装を GitHub で公開しています．</p>
+                        <a href="https://github.com/tiskw/gaussian-process-bootstrapping-layer" class="btn btn-primary" target="blank_"><!--
+                        --><i class="fab fa-github"></i> GitHub Repository <i class="fas fa-external-link-alt"></i></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
                         <h3 class="card-title text-center">nishiki: shell ラッパー</h3>
                         <img src="images/code/nishiki_screenshot.jpg" class="card-img-top" alt="nishiki_screenshot">
                         <p class="card-text">Linux のコマンドラインが大好きだけれども cd や mv コマンドなどでファイルパスを指定するのが面倒！，<!--
