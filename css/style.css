@@ -59,7 +59,6 @@ nav.navbar {
     background-color: var(--color01);
     font-family: var(--font01);
 }
-
 .navbar a.active {
     color: var(--color02);
     text-decoration: none;
@@ -112,7 +111,6 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
 .jumbotron h1 {
     color: var(--color01);
     font-family: var(--font01);
@@ -136,7 +134,6 @@ footer {
     margin: 0.5em 0;
     opacity: 1.0;
 }
-
 .reverse {
     flex-direction: row-reverse;
 }
@@ -257,25 +254,26 @@ h3.card-text {
 .pbar-color05 {background-color: slateblue;    color: white;}
 .pbar-color06 {background-color: slategray;    color: white;}
 
-
-
 table.hover-table td {
     border: 0px none;
 }
-
 table.hover-table tr:hover {
     background-color: #EEEEEE;
     transition: all 0.5s ease;
 }
-
 a.btn {
     background-color: var(--color01);
     border: 0px none;
 }
-
 a.btn:hover {
     background-color: var(--color03);
     border: 0px none;
+}
+img.card-img-top-compact {
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
 }
 
 /* * * * * * * * * * * * * * * * * * * * *\
@@ -288,7 +286,6 @@ a.btn:hover {
   position: relative;
   width: 100%;
 }
-
 .map-container iframe{
   left: 0;
   top: 0;
@@ -297,3 +294,10 @@ a.btn:hover {
   position: absolute;
 }
 
+/* * * * * * * * * * * * * * * * * * * * *\
+ * Others
+\* * * * * * * * * * * * * * * * * * * * */
+
+p.devtool-badge {
+    line-height: 2.2;
+}
