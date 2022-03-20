@@ -72,6 +72,34 @@
                     </div></div></div>
 
                     <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
+                        <h3 class="card-title text-center" id="patchcoread">PatchCore Anomaly Detection</h3>
+                        <img src="images/code/patchcore_ad_sketch.jpg" class="card-img-top" alt="patchcore_ad">
+                        <p class="card-text">PatchCore と呼ばれる 2021 年に提案された画像異常検知手法の Python 実装です．<!--
+                        -->PatchCore は 2020 年に提案された SPADE と呼ばれる手法の高速版という位置付けの手法であり，<!--
+                        -->推論が SPADE よりも格段に高速なだけでなく，SPADE よりも高い異常検知性能を示しており，<!--
+                        -->性能と速度のバランスに大変優れています．2021 年末までは MVTecAD というデータセットにおいて SOTA を維持していました．<!--
+                        -->本レポジトリ以外にも PatchCore の Python 実装はいくつか存在しますが，本レポジトリは原論文に忠実な実装をしつつ<!--
+                        -->（特に異常スコアの算出部分），原論文とほぼ同等が実現できていることを確認しているのが特徴です．<!--
+                        -->この PatchCore の PyTorch 実装は GitHub で公開されています．</p><!--
+                        --><a href="https://github.com/tiskw/patchcore-ad" class="btn btn-primary" target="blank_"><!--
+                        --><i class="fab fa-github"></i> GitHub Repository <i class="fas fa-external-link-alt"></i></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
+                        <h3 class="card-title text-center" id="patchcoread">Binary Random Forest on TFHE</h3>
+                        <img src="images/code/sketch_binary_random_forest.png" class="card-img-top" alt="patchcore_ad">
+                        <p class="card-text">準同型暗号 (fully homomorphic encryption) と呼ばれる技術があります．<!--
+                        -->これは暗号文を復号化することなく四則演算などの演算を行う技術であり，理論的には暗号文のまま<!--
+                        -->機械学習などのアルゴリズムを適用することが可能とされています．この技術はクラウドサービスでの応用が<!--
+                        -->期待されており，近年とても注目されていますが，暗号文のまま演算を行うのは計算コストが非常に高いという<!--
+                        -->問題があり，現状では線形回帰などの計算負荷が極めて少ない機械学習アルゴリズムしか実用化されていません．<!--
+                        -->本レポジトリでは，TFHE と呼ばれる準同型暗号のひとつを用いることでランダムフォレストが構成できることを<!--
+                        -->提案し，その性能が線形回帰を大きく上回ること，推論時間が現実的な範囲に収まることを実証します．</p><!--
+                        --><a href="https://github.com/MRT-RG/binary-random-forest-tfhe" class="btn btn-primary" target="blank_"><!--
+                        --><i class="fab fa-github"></i> GitHub Repository <i class="fas fa-external-link-alt"></i></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
                         <h3 class="card-title text-center" id="gpblayer">Gaussian process bootstrapping layer</h3>
                         <img src="images/code/gpb_layer_sketch.png" class="card-img-top" alt="gpb_layer_sketch">
                         <p class="card-text">ニューラルネットの汎化性能を向上させることを目的とした，ブートストラッピング層のご提案です．<!--
