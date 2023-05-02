@@ -71,12 +71,27 @@
 
                     <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
                         <h3 class="card-title text-center">Random Fourier Features</h3>
-                        <img src="images/writings/kernel_approximation.png" class="card-img-top" alt="kernel_svm_example">
+                        <img src="images/writings/kernel_approximation.png" class="card-img-top" alt="random_fourier_features">
                         <p class="card-text">本文書は，2007年に提案された Random Fourier Features (以下，RFF と略します) について解説した文書です．<!--
                         -->古典的なカーネルサポートベクターマシンを事前に理解しておく必要がありますが，<!--
                         -->比較的最近の新鮮な結果に踏み込めるというのは若い方々にとっては良いのではないかなと思います．<!--
                         -->また，RFF は単純な深層学習の変形と見なすこともでき，そのことにも簡単に触れています．<!--
                         -->RFFをScikit-learnのように使えるようにした拙作のライブラリ <a href="./code.html#rfflearn" class="hover-anime">rfflearn <i class="fas fa-external-link-alt"></i></a> も宜しければどうぞ．</p>
+                        <a href="https://github.com/tiskw/Mathematical-Articles/blob/master/random_fourier_features_JP/random_fourier_features.pdf" class="btn btn-primary" target="blank_"><!--
+                        --><i class="fab fa-github"></i> GitHub Repository <i class="fas fa-external-link-alt"></i></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
+                        <h3 class="card-title text-center">ガウス過程モデルとRandom Fourier Features</h3>
+                        <!-- <img src="" class="card-img-top" alt="gaussian_model_and_rff"> -->
+                        <p class="card-text">実務でデータ解析をしていると，予測した値の不確実性を評価したくなることが多々あります．<!--
+                        -->ガウス過程モデルは予測の不確実性を評価できる数少ないモデルのひとつですが，学習時間，推論時間は<!--
+                        -->カーネルサポートベクターマシンと同等であり，大規模データへの適用は困難と言わざるを得ません．<!--
+                        -->そこでガウス過程モデルに Random Fourier Features を適用することで大規模データへの適用を可能にしてやろうというのが本文書の目的です．<!--
+                        -->事前にガウス過程モデルと RFF を理解してからお読み頂くことを推奨します．<!--
+                        -->元々は拙作のライブラリ <a href="./code.html#rfflearn" class="hover-anime">rfflearn <i class="fas fa-external-link-alt"></i></a> で使うために開発した手法であり，<!--
+                        -->英語版は  <a href="https://github.com/tiskw/random-fourier-features/blob/main/documents/rff_for_gaussian_process.pdf" class="hover-anime" target="blank_">rfflearn のレポジトリで公開 <i class="fas fa-external-link-alt"></i></a> しています．<!--
+                        -->本文書はその日本語版，かつ少し冗長に説明したものという立ち位置です．</p>
                         <a href="https://github.com/tiskw/Mathematical-Articles/blob/master/random_fourier_features_JP/random_fourier_features.pdf" class="btn btn-primary" target="blank_"><!--
                         --><i class="fab fa-github"></i> GitHub Repository <i class="fas fa-external-link-alt"></i></a>
                     </div></div></div>

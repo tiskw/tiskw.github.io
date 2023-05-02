@@ -66,7 +66,7 @@
                         -->それこそが K-SVM の強みなのですが，データセットの数が膨大になると推論時間が現実的でなくなります．<!--
                         -->そこで「カーネル関数を有限自由度の関数で近似してしまえ」という方針で計算量を大幅に減らしたのが RFF です．<!--
                         -->同時に学習時間も大幅に減少します．動作には Python3 と scikit-learn が必要です．<!--
-                        -->Optuna による自動ハイパーパラメータ調整や Shap を用いた特徴量重要度の可視化にも対応しています．</p>
+                        -->Optuna による自動ハイパーパラメータ調整や Shapley を用いた特徴量重要度の可視化にも対応しています．</p>
                         <a href="https://github.com/tiskw/random-fourier-features" class="btn btn-primary" target="blank_"><!--
                         --><i class="fab fa-github"></i> GitHub Repository <i class="fas fa-external-link-alt"></i></a>
                     </div></div></div>
@@ -117,12 +117,13 @@
                     </div></div></div>
 
                     <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
-                        <h3 class="card-title text-center">nishiki: shell ラッパー</h3>
+                        <h3 class="card-title text-center">NiSHiKi: shell ラッパー</h3>
                         <img src="images/code/nishiki_screenshot.jpg" class="card-img-top" alt="nishiki_screenshot">
                         <p class="card-text">Linux のコマンドラインが大好きだけれども cd や mv コマンドなどでファイルパスを指定するのが面倒！，<!--
-                        -->あるいはオプション引数を覚えきれない！というそこの貴方へ．nishiki はコマンドを入力しながらファイルパスやオプション引数の<!--
+                        -->あるいはオプション引数を覚えきれない！というそこの貴方へ．NiShiKi はコマンドを入力しながらファイルパスやオプション引数の<!--
                         -->候補をリアルタイムに画面に表示し，TAB を押すと補完することができます．通常のシェルと比較すると煩わしいくらいの補完です．<!--
-                        -->本ソフトウェアは Nim で記述されており，簡潔さのために 500 行以内で実装されています（ただしコメントや空白行はカウント外）．<!--
+                        -->またファイル選択やプロセスIDの選択，コマンド履歴の呼び出しなどをグラフィカルに行うインタフェースも供えています．<!--
+                        -->本ソフトウェアは C++ で記述されており，簡潔さのために 3,000 行以内で実装されています（ただしコメントや空白行はカウント外）．<!--
                         -->また，任意の言語で作成した外部プログラムをプラグインとして呼び出すことができます．<!--
                         -->ただし本ソフトウェアは shell ではなく，編集補助のための shell ラッパーという点にご注意下さい．<!--
                         -->ソースコードは GitHub で公開しています．</p>
