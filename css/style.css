@@ -50,6 +50,12 @@ h3, h4, h5 {
     color: var(--color01);
 }
 
+em {
+    font-family: var(--font00);
+    font-weight: bold;
+    color: var(--color01);
+}
+
 /* * * * * * * * * * * * * * * * * * * * *\
  * Page Header
 \* * * * * * * * * * * * * * * * * * * * */

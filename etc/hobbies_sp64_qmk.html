@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ja" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Tetsuya Ishikawa is a mathematical engineer, focusing all his efforts on making the world better through mathematics">
+        <meta name="keywords" content="石川徹也,Tetsuya Ishikawa,数学,機械学習,ソフトウェア,Mathematics,Machine Learning,Software">
+        <meta name="robots" content="index,follow" />
+        <meta name="author" content="Tetsuya Ishikawa, tiskw111@gmail.com">
+        <meta name="url" content="https://tiskw.gitlab.io/home/etc/hobbies_mechanicalkeyboards.html">
+        <link rel="icon" href="../images/else/logo-short.svg">
+
+        <title>Tetsuya Ishikawa</title>
+
+        <!-- Load webfont -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" type="text/css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" type="text/css">
+
+        <!-- Bootstrap core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Custom styles for this page -->
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+        <!-- Plotly.js -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    </head>
+    <body class="d-flex flex-column h-100">
+
+        <!-- Fixed navbar -->
+        <header><nav class="navbar navbar-expand-md fixed-top"><div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../images/else/logo.svg" alt="webpage_logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse"><ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item"><a class="nav-link normal" href="../writings.html">Writings</a></li>
+                <li class="nav-item"><a class="nav-link normal" href="../code.html">Code</a></li>
+                <li class="nav-item"><a class="nav-link normal" href="../running.html">Running</a></li>
+                <li class="nav-item"><a class="nav-link active" href="../hobbies.html">Hobbies</a></li>
+                <li class="nav-item"><a class="nav-link normal" href="../about.html">About</a></li>
+            </ul></div>
+        </div></nav></header>
+
+        <main class="flex-shrink-0">
+
+            <!-- Jumbotrom -->
+            <div class="jumbotron position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center"><div class="col-md-5 p-lg-1 mx-auto my-5">
+                <h1 class="display-1 fw-normal">Tetsuya Ishikawa</h1>
+                <p class="h4 fw-normal">Everything in the World is Made of Mathematics</p>
+            </div></div>
+
+            <div class="site-contents container p-lg-1">
+                <div class="row mb-3"><div class="col-md-12 text-center">
+                    <h1 class="display-4">QMK for SP64</h1>
+                    <p>メカニカルキーボード</p>
+                </div></div>
+                <div class="row mb-4"><div class="col-md-12">
+                    <p>YMDK 製のメカニカルキーボード SP64 はキーマップをフルカスタマイズすることができますが，<!--
+                    -->カスタマイズのためには通常 Bootmapper というソフトウェアを使用します．ですがお世辞にも<!--
+                    -->使いやすいとは言えませんし，セキュリティ的にもちょっと不安です．ここでは有名なファームウェア<!--
+                    -->である QMK を使って SP64 のキーマップを変更する手順について記載します．</p>
+
+                    <p><em>STEP 1:</em>&nbsp;&nbsp;<!--
+                    --><a href="https://config.qmk.fm/#/ymdk/sp64/LAYOUT" class="hover-anime" target="_blank">QMK Configurator <i class="fas fa-external-link-alt"></i></a> <!--
+                    -->からレイアウトを設定しファームウェアのバイナリをダウンロードします．QMK Configurator の使い方は<!--
+                    -->非常に直感的ですし，検索すればすぐに出てきますので，ここでは省略します．基本的には，ページ冒頭部にある<!--
+                    -->キーボード選択欄にて YMDK/SP64 が選択されていることを確認した上で，キーマップを選択します．<!--
+                    -->そして右上の「COMPILE」をクリックし，完了したら「FIRMWARE」ボタンでバイナリをダウンロードします．</p>
+
+                    <p><em>STEP 2:</em>&nbsp;&nbsp;<!--
+                    --><a href="" class="hover-anime" target="_blank">QMK の GitHub ページ<i class="fas fa-external-link-alt"></i></a><!--
+                    -->から QMK Toolbox をダウンロードする．インストール手順は OS によって異なるので省略するが，特に難しいことはありません．<!--
+                    -->Windows の場合，ZIP 版をダウンロードすればZIPを展開するだけですぐに使えるのでオススメです．</p>
+
+                    <p><em>STEP 3:</em>&nbsp;&nbsp;<!--
+                    -->QMK Toolbox の右上にある MCU 選択欄で「ATmega32A」を選択します．<!--
+                    -->さらに上部にある「Open」ボタンで作成したファームウェアのバイナリを選択します．</p>
+
+                    <p><em>STEP 4:</em>&nbsp;&nbsp;<!--
+                    -->キーボード左下の「LEFT-CTRL」を押しながら SP64 のプラグを引き抜き，再度接続します．すると<!--
+                    -->「BootloadHID device connected: obdve.at ...」と表示されます．場合によっては OS 側でドライバの<!--
+                    -->インストールが走るので少し待ちます．</p>
+
+                    <p><em>STEP 5:</em>&nbsp;&nbsp;<!--
+                    -->「Flash」を押します．するとファームウェアの書き込みが始まります．<!--
+                    -->終了すると「Flash complete」と表示されるので，それまで待ちます．</p>
+
+                    <p>以上で作業は終了です．SP64 w/ QMK をお楽しみ下さい！</p>
+                </div></div>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer mt-auto py-3">
+            <div class="container text-center">
+                <span>Copyright (C) 2017-<span id="thisYear"></span> Tetsuya Ishikawa</span>
+            </div>
+        </footer>
+
+        <!-- Load javascripts -->
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery-3.6.4.slim.min.js"></script>
+        <script src="../js/script.js"></script>
+
+    </body>
+</html>
