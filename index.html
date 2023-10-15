@@ -14,9 +14,13 @@
         <title>Tetsuya Ishikawa</title>
 
         <!-- Load webfont -->
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" type="text/css">
-        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" type="text/css">
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" crossorigin>
+        <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" crossorigin>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" media="print" onload="this.media='all'">
 
         <!-- Bootstrap core CSS -->
         <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -53,7 +57,7 @@
 
                 <div class="row dflex heading-box">
                     <div class="col-md-3 text-center heading-box-small"><a href="./writings.html"><div class="slidetext">
-                        <img src="images/toppage/image_pen.jpg" class="img-fluid" alt="image_writings">
+                        <img src="images/toppage/image_pen.webp" class="img-fluid" alt="image_writings">
                         <div class="mask d-flex"><div class="caption mx-auto align-self-center">Read more</div></div>
                     </div></a></div>
                     <div class="col-md-9 heading-box-large">
@@ -65,7 +69,7 @@
 
                 <div class="row dflex heading-box reverse">
                     <div class="col-md-3 text-center heading-box-small"><a href="./code.html"><div class="slidetext">
-                        <img src="images/toppage/image_code.jpg" class="img-fluid" alt="image_code">
+                        <img src="images/toppage/image_code.webp" class="img-fluid" alt="image_code">
                         <div class="mask d-flex"><div class="caption mx-auto align-self-center">Read more</div></div>
                     </div></a></div>
                     <div class="col-md-9 heading-box-large">
@@ -77,7 +81,7 @@
 
                 <div class="row dflex heading-box">
                     <div class="col-md-3 text-center heading-box-small"><a href="./running.html"><div class="slidetext">
-                        <img src="images/toppage/image_jog.jpg" class="img-fluid" alt="image_running">
+                        <img src="images/toppage/image_jog.webp" class="img-fluid" alt="image_running">
                         <div class="mask d-flex"><div class="caption mx-auto align-self-center">Read more</div></div>
                     </div></a></div>
                     <div class="col-md-9 heading-box-large">
@@ -89,7 +93,7 @@
 
                 <div class="row dflex heading-box reverse">
                     <div class="col-md-3 text-center heading-box-small"><a href="./hobbies.html"><div class="slidetext">
-                        <img src="images/toppage/image_hobbies.jpg" class="img-fluid" alt="image_running">
+                        <img src="images/toppage/image_hobbies.webp" class="img-fluid" alt="image_running">
                         <div class="mask d-flex"><div class="caption mx-auto align-self-center">Read more</div></div>
                     </div></a></div>
                     <div class="col-md-9 heading-box-large">
@@ -101,7 +105,7 @@
 
                 <div class="row dflex heading-box">
                     <div class="col-md-3 text-center heading-box-small"><a href="./about.html"><div class="slidetext">
-                        <img src="images/toppage/image_about.jpg" class="img-fluid" alt="image_about">
+                        <img src="images/toppage/image_about.webp" class="img-fluid" alt="image_about">
                         <div class="mask d-flex"><div class="caption mx-auto align-self-center">Read more</div></div>
                     </div></a></div>
                     <div class="col-md-9 heading-box-large">
