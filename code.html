@@ -89,6 +89,35 @@
                     </div></div></div>
 
                     <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
+                        <h3 class="card-title text-center" id="patchcoread">Score-CAM PyTorch</h3>
+                        <img src="images/code/scorecam_pytorch.webp" class="card-img-top" alt="patchcore_ad">
+                        <p class="card-text">Score-CAM と呼ばれる CNN の判断根拠の可視化手法の PyTorch 実装です．<!--
+                        -->CNN に対する判断根拠の可視化手法としては Grad-CAM が最も有名ですが，Score-CAM も Grad-CAM の派生のひとつです．<!--
+                        -->Score-CAM のメリットのひとつは勾配を用いないことによる数値的な安定性にあります．<!--
+                        -->Grad-CAM では勾配消失などの理由で可視化ヒートマップがうまく算出できないケースが稀にありますが，<!--
+                        -->Score-CAM ではそういった心配がありません．逆に Score-CAM のデメリットは計算量の多さにあり，<!--
+                        -->推論対象の枚数が極端に多い場合は計算量の多さが問題になります．本レポジトリではそのデメリットを<!--
+                        -->回避するため，CSKIP (Channel SKIPping) というトリックも提供しています．<!--
+                        --></p><!--
+                        --><a href="https://github.com/tiskw/scorecam-pytorch" class="btn btn-primary" target="blank_"><!--
+                        --><i class="fab fa-github"></i> GitHub Repository <i class="fas fa-external-link-alt"></i></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
+                        <h3 class="card-title text-center" id="patchcoread">THOPLW: PyTorch Op-counter Layerwise</h3>
+                        <img src="images/code/thoplw_table.webp" class="card-img-top" alt="patchcore_ad">
+                        <p class="card-text">PyTorch をお使いの方であれば，PyTorch で実装されたモデルの計算量を算出する<!--
+                        --> thop パッケージをご存じの方も多いと思います．シンプルなインタフェースと必要十分な機能を有する<!--
+                        -->とても優れたパッケージなのですが，唯一の弱点は「レイヤーごとの情報が出てこない」という点です．<!--
+                        -->レイヤーごとの計算量や，各レイヤーの出力テンソルのサイズが一覧されればさらに便利です．<!--
+                        -->それを実現できるようにしたのが本パッケージ thoplw です．この thoplw と同等のことが部分的にできる<!--
+                        -->パッケージは他にも存在しますが（例えば thlop など），PyTorch 2.x 系でも動作するように<!--
+                        -->メンテナンスされているのは，私が知る限りではこの thoplw だけです．pip で簡単に導入できます．</p><!--
+                        --><a href="https://github.com/tiskw/pytorch-op-counter-layerwise" class="btn btn-primary" target="blank_"><!--
+                        --><i class="fab fa-github"></i> GitHub Repository <i class="fas fa-external-link-alt"></i></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 mb-4"><div class="card h-100 px-2 py-2"><div class="card-body">
                         <h3 class="card-title text-center" id="patchcoread">Binary Random Forest on TFHE</h3>
                         <img src="images/code/sketch_binary_random_forest.webp" class="card-img-top" alt="patchcore_ad">
                         <p class="card-text">準同型暗号 (fully homomorphic encryption) と呼ばれる技術があります．<!--
